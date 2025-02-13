@@ -15,6 +15,9 @@ namespace dade_staples_software_I_assessment
         public Form1()
         {
             InitializeComponent();
+
+            dgvParts.DataSource = Inventory.AllParts;
+            dgvProducts.DataSource = Inventory.Products;
         }
     }
 }
