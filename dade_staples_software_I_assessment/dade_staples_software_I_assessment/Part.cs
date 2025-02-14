@@ -15,5 +15,15 @@ namespace dade_staples_software_I_assessment
         public int min { get; set; }
         public int max { get; set; }
 
+        public Part(int partID, string name, decimal price, int inStock, int min, int max)
+        {
+            this.partID = partID;
+            this.name = name;
+            this.price = price;
+            this.inStock = inStock;
+            this.min = min;
+            this.max = max;
+        }
     }
+
 }

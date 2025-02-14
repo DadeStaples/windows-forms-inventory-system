@@ -18,58 +18,109 @@ namespace dade_staples_software_I_assessment
 
         static Inventory()
         {
-            AllParts.Add(new Part { partID = 0, name = "Tire", price = 49.99m, inStock = 12, min = 4, max = 20 });
-            AllParts.Add(new Part { partID = 1, name = "Screw", price = 1.99m, inStock = 100, min = 10, max = 500 });
-            AllParts.Add(new Part { partID = 2, name = "Bolt", price = 5.99m, inStock = 50, min = 10, max = 100 });
+            AllParts.Add(new Part(0, "Tire", 49.99m, 12, 4, 20));
+            AllParts.Add(new Part(1, "Screw", 1.99m, 100, 10, 500));
+            AllParts.Add(new Part(2, "Bolt", 5.99m, 50, 10, 100));
 
             Products.Add(
             new Product(
             new BindingList<Part>
             {
-                new Part { partID = 0, name = "Tire", price = 49.99m,  inStock = 12, min = 4, max = 20 },
-                new Part { partID = 2, name = "Bolt", price = 5.99m, inStock = 50, min = 10, max = 100 }
+                new Part (0, "Tire", 49.99m, 12, 4, 20),
+                new Part (2, "Bolt", 5.99m, 50, 10, 100 )
             },
             0, "Wheel", 149.99m, 12, 20, 4)
             );
             Products.Add(new Product(
             new BindingList<Part>
             {
-                new Part { partID = 1, name = "Screw", price = 1.99m, inStock = 100, min = 10, max = 500 },
-                new Part { partID = 2, name = "Bolt", price = 5.99m, inStock = 50, min = 10, max = 100 }
+                new Part (1, "Screw", 1.99m, 100, 10, 500 ),
+                new Part (2, "Bolt", 5.99m, 50, 10, 100 )
             },
             1, "Lug Nut", 5.99m, 100, 20, 500));
         }
 
 
-        // addProduct(Product) : void **TODO
+        // addProduct(Product) : void 
+
+        public static void addProduct(List<Part> associatedParts, int productID, string name, decimal price, int inStock, int min, int max)
+        {
+            Products.Add(new Product(new BindingList<Part>(associatedParts), productID, name, price, inStock, min, max));
+        }
+
 
         // removeProduct(int) : bool **TODO
         public static bool removeProduct(int idToDelete)
         {
-            bool removed = false;
 
+            // needs to check for associated parts as well **TODO
 
-            for (int i = Products.Count - 1; i >= 0; i--)
+            for (int ctr = Products.Count - 1; ctr >= 0; ctr--)
             {
-                if (Products[i].productID == idToDelete)
+                if (Products[ctr].productID == idToDelete)
                 {
-                    Products.RemoveAt(i);
-                    removed = true;
+                    Products.RemoveAt(ctr);
+                    return true;
                 }
             }
 
-            return removed;
+            return false;
         }
 
-        //lookupProduct(int) : Product **TODO
+        //lookupProduct(int) : Product 
+
+        public static Product lookupProduct(int getId)
+        {
+            
+            for (int ctr = Products.Count - 1; ctr >= 0; ctr--)
+            {
+                if (Products[ctr].productID == getId)
+                {
+                  return Products[ctr];
+                }
+            }
+            return null;
+
+        }
 
         //updateProduct(int, Product) : void **TODO
 
-        //addPart(Part) : void **TODO
+        //addPart(Part) : void
+        public static void addPart(int partID, string name, decimal price, int inStock, int min, int max)
+        {
+            AllParts.Add(new Part(partID, name, price, inStock, min, max));
+        }
 
-        //deletePart(Part) : bool **TODO
+        //deletePart(Part) : bool 
+        public static bool removePart(int idToDelete)
+        {
 
-        //lookupPart(int) : Part **TODO
+            for (int ctr = AllParts.Count - 1; ctr >= 0; ctr--)
+            {
+                if (AllParts[ctr].partID == idToDelete)
+                {
+                    AllParts.RemoveAt(ctr);
+                    return  true;
+                }
+            }
+
+            return false;
+        }
+
+        //lookupPart(int) : Part 
+        public static Part lookupPart(int getId)
+        {
+
+            for (int ctr = AllParts.Count - 1; ctr >= 0; ctr--)
+            {
+                if (AllParts[ctr].partID == getId)
+                {
+                    return AllParts[ctr];
+                }
+            }
+            return null;
+
+        }
 
         //updatePart(int, Part) : void **TODO
 

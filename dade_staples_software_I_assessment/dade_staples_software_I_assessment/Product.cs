@@ -37,17 +37,17 @@ namespace dade_staples_software_I_assessment
         new Product(
             new BindingList<Part>
             {
-                new Part { partID = 0, name = "Tire", price = 49.99m,  inStock = 12, min = 4, max = 20 }
+                new Part (0, "Tire", 49.99m, 12, 4, 20 )
             },
             0, "Wheel", 149.99m, 12, 20, 4),
         new Product(new BindingList<Part>
                         {
-                new Part { partID = 0, name = "Spoke", price = 49.99m,  inStock = 12, min = 4, max = 20 }
+                new Part (0, "Spoke", 49.99m, 12, 4, 20 )
             },
             1, "Hubcap", 249.99m, 16, 4 , 20),
         new Product(new BindingList<Part>
                         {
-                new Part { partID = 0, name = "Bracket", price = 49.99m,  inStock = 12, min = 4, max = 20 }
+                new Part (0, "Bracket", 49.99m, 12, 4, 20 )
             },
             3, "Lug Nuts", 19.99m, 40, 20, 60)
     };
@@ -87,16 +87,18 @@ namespace dade_staples_software_I_assessment
             }
         }
 
-        //Move to Inventory Class
-
-        //public static void AddItem(List<Part> associatedParts, int id, string name, decimal price, int inStock, int min, int max)
-        //{
-        //    DefaultProducts.Add(new Product(new List<Part>(), id, name, price, inStock, min, max));
-        //}
 
         // **TODO implement addAssociated part,recieves Part arguement, return is void **
 
         // **TODO implement lookupAssociatedPart, recieves int arguement,  returns part **
+
+        public static Product lookupAssociatedPart(int getId)
+        {
+
+            // lookup code goes here
+            return null;
+
+        }
 
     }
 }
