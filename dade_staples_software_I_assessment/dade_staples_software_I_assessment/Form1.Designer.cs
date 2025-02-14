@@ -30,6 +30,8 @@
         {
             this.dgvParts = new System.Windows.Forms.DataGridView();
             this.dgvProducts = new System.Windows.Forms.DataGridView();
+            this.showButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -43,6 +45,7 @@
             this.dgvParts.RowTemplate.Height = 24;
             this.dgvParts.Size = new System.Drawing.Size(505, 312);
             this.dgvParts.TabIndex = 0;
+            this.dgvParts.DataBindingComplete += new System.Windows.Forms.DataGridViewBindingCompleteEventHandler(this.BindingComplete);
             // 
             // dgvProducts
             // 
@@ -54,11 +57,33 @@
             this.dgvProducts.Size = new System.Drawing.Size(500, 312);
             this.dgvProducts.TabIndex = 1;
             // 
+            // showButton
+            // 
+            this.showButton.Location = new System.Drawing.Point(41, 387);
+            this.showButton.Name = "showButton";
+            this.showButton.Size = new System.Drawing.Size(157, 51);
+            this.showButton.TabIndex = 2;
+            this.showButton.Text = "Show Item";
+            this.showButton.UseVisualStyleBackColor = true;
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(381, 387);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(165, 51);
+            this.DeleteButton.TabIndex = 3;
+            this.DeleteButton.Text = "Delete Item";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.DeleteButton);
+            this.Controls.Add(this.showButton);
             this.Controls.Add(this.dgvProducts);
             this.Controls.Add(this.dgvParts);
             this.Name = "Form1";
@@ -73,6 +98,8 @@
 
         private System.Windows.Forms.DataGridView dgvParts;
         private System.Windows.Forms.DataGridView dgvProducts;
+        private System.Windows.Forms.Button showButton;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 
