@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
 using static dade_staples_software_I_assessment.Part;
+using System.Windows.Forms;
 
 namespace dade_staples_software_I_assessment
 {
@@ -91,17 +92,32 @@ namespace dade_staples_software_I_assessment
             AllParts.Add(new Part(partID, name, price, inStock, min, max));
         }
 
-        //deletePart(Part) : bool 
+        //deletePart(Part) : bool - STILL NEEDS TO CHECK IF PART IS ASSOCIATED WITH ANY PRODUCTS **TODO
         public static bool removePart(int idToDelete)
         {
-
+            
             for (int ctr = AllParts.Count - 1; ctr >= 0; ctr--)
             {
-                if (AllParts[ctr].partID == idToDelete)
+                foreach (Product product in Products)
                 {
-                    AllParts.RemoveAt(ctr);
-                    return  true;
+                    foreach (Part assocPart in product.associatedParts)
+                    {
+                        if (idToDelete == assocPart.partID)
+                        {
+                            MessageBox.Show($"Part cannot be deleted, product '{product.name}' contains this part.",
+                                            "Product Conflict",
+                                            MessageBoxButtons.OK,
+                                            MessageBoxIcon.Warning);
+                            return false;
+                        }
+                        else
+                        {
+                            AllParts.RemoveAt(ctr);
+                            return true;
+                        }
+                    }
                 }
+  
             }
 
             return false;
@@ -123,6 +139,12 @@ namespace dade_staples_software_I_assessment
         }
 
         //updatePart(int, Part) : void **TODO
+        public static void updatePart( int idToUpdate, Part partToUpdate )
+        {
+            //Use incoming idToUpdate to identify which part is being updated
+            //Use incoming partToUpdate fields to replace part fields at given id
+            //will probably need to refresh dgv in Form1.cs
+        }
 
 
 
