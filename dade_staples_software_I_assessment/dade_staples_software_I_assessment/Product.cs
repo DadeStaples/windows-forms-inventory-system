@@ -28,66 +28,6 @@ namespace dade_staples_software_I_assessment
             this.max = max;
         }
 
-        //List<Product> products = new List<Product>();
-
-        //sets list of default products to be displayed, may need to change to BindingList
-        //this will probably also need to be moved to the inventory class
-        public static List<Product> DefaultProducts { get; } = new List<Product>
-    {
-        new Product(
-            new BindingList<Part>
-            {
-                new Part (0, "Tire", 49.99m, 12, 4, 20 )
-            },
-            0, "Wheel", 149.99m, 12, 20, 4),
-        new Product(new BindingList<Part>
-                        {
-                new Part (0, "Spoke", 49.99m, 12, 4, 20 )
-            },
-            1, "Hubcap", 249.99m, 16, 4 , 20),
-        new Product(new BindingList<Part>
-                        {
-                new Part (0, "Bracket", 49.99m, 12, 4, 20 )
-            },
-            3, "Lug Nuts", 19.99m, 40, 20, 60)
-    };
-
-
-        // **TODO need to change this to return bool value **
-        // **TODO this will be moved to inventory class
-        public static void removeProduct(int idToDelete)
-        {
-            bool removed = false;
-
-
-            foreach (Product p in DefaultProducts)
-            {
-                if (p.productID == idToDelete)
-                {
-                    removed = true;
-                }
-            }
-            DefaultProducts.RemoveAll(p => p.productID == idToDelete);
-
-            //this check is likely not needed for assessment 
-
-            if (removed == true)
-                Console.WriteLine($"Item with ID #{idToDelete} has been deleted.");
-            else
-                Console.WriteLine($"No item found with ID #{idToDelete}.");
-        }
-
-
-        //likely not needed for assessment product
-        public static void GetAll()
-        {
-            foreach (Product product in Product.DefaultProducts)
-            {
-                Console.WriteLine($" Associated Parts: TBD ID: {product.productID} Name: {product.name} Price: ${product.price:F2}, In stock: {product.inStock}, Minimum: {product.min}, Maximum: {product.max}");
-            }
-        }
-
-
         // **TODO implement addAssociated part,recieves Part arguement, return is void **
 
         // **TODO implement lookupAssociatedPart, recieves int arguement,  returns part **

@@ -15,5 +15,10 @@ namespace dade_staples_software_I_assessment
         {
             this.CompanyName = companyName;
         }
+
+        public override string manufactureType
+        {
+            get { return "Outsourced"; }
+        }
     }
 }

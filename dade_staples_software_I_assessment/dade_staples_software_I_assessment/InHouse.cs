@@ -15,5 +15,10 @@ namespace dade_staples_software_I_assessment
         {
             this.MachineID = machineID;
         }
+
+        public override string manufactureType
+        {
+            get { return "In-House"; }
+        }
     }
 }

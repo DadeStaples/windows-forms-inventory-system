@@ -88,7 +88,8 @@ namespace dade_staples_software_I_assessment
         //addPart(Part) : void **TODO
         public static void addPart(int partID, string name, decimal price, int inStock, int min, int max)
         {
-            AllParts.Add(new Part(partID, name, price, inStock, min, max));
+            //Need to use InHouse or Outsourced classed to avoid calling abstract part class directly
+            //AllParts.Add(new Part(partID, name, price, inStock, min, max));
         }
 
         //deletePart(Part) : bool

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dade_staples_software_I_assessment
 {
-    public class Part
+    public abstract class Part
     {
         public int partID { get; set; }
         public string name { get; set; }
@@ -14,6 +14,12 @@ namespace dade_staples_software_I_assessment
         public int inStock { get; set; }
         public int min { get; set; }
         public int max { get; set; }
+
+        public virtual string manufactureType
+        {
+            get { return "Unknown"; }
+        }
+
 
         public Part(int partID, string name, decimal price, int inStock, int min, int max)
         {
