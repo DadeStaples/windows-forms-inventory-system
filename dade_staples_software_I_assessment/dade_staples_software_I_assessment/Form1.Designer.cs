@@ -32,6 +32,7 @@
             this.dgvProducts = new System.Windows.Forms.DataGridView();
             this.showButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
+            this.deleteProduct = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -73,15 +74,26 @@
             this.DeleteButton.Name = "DeleteButton";
             this.DeleteButton.Size = new System.Drawing.Size(165, 51);
             this.DeleteButton.TabIndex = 3;
-            this.DeleteButton.Text = "Delete Item";
+            this.DeleteButton.Text = "Delete Part";
             this.DeleteButton.UseVisualStyleBackColor = true;
             this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
+            // 
+            // deleteProduct
+            // 
+            this.deleteProduct.Location = new System.Drawing.Point(972, 387);
+            this.deleteProduct.Name = "deleteProduct";
+            this.deleteProduct.Size = new System.Drawing.Size(140, 51);
+            this.deleteProduct.TabIndex = 4;
+            this.deleteProduct.Text = "Delete Product";
+            this.deleteProduct.UseVisualStyleBackColor = true;
+            this.deleteProduct.Click += new System.EventHandler(this.deleteProduct_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.deleteProduct);
             this.Controls.Add(this.DeleteButton);
             this.Controls.Add(this.showButton);
             this.Controls.Add(this.dgvProducts);
@@ -100,6 +112,7 @@
         private System.Windows.Forms.DataGridView dgvProducts;
         private System.Windows.Forms.Button showButton;
         private System.Windows.Forms.Button DeleteButton;
+        private System.Windows.Forms.Button deleteProduct;
     }
 }
 

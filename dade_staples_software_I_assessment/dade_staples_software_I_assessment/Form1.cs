@@ -77,7 +77,7 @@ namespace dade_staples_software_I_assessment
 
                 if (result == DialogResult.Yes)
                 {
-                    int partID = (int)dgvParts.CurrentRow.Cells["partID"].Value;
+                    int partID = selectedPart.partID;
                     Inventory.removePart(partID);
                     dgvParts.Refresh();
 
@@ -88,6 +88,34 @@ namespace dade_staples_software_I_assessment
                 MessageBox.Show("Please select a part to delete.", 
                                 "No Selection", 
                                 MessageBoxButtons.OK, 
+                                MessageBoxIcon.Information);
+            }
+        }
+
+        private void deleteProduct_Click(object sender, EventArgs e)
+        {
+            if (dgvProducts.CurrentRow.Selected != false)
+            {
+                Product selectedProduct = dgvProducts.CurrentRow.DataBoundItem as Product;
+
+                DialogResult result = MessageBox.Show($"Are you sure you want to delete '{selectedProduct.name}'?",
+                                                      "Confirm Deletion",
+                                                      MessageBoxButtons.YesNo,
+                                                      MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Yes)
+                {
+                    int productID = selectedProduct.productID;
+                    Inventory.removeProduct(productID);
+                    dgvParts.Refresh();
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a part to delete.",
+                                "No Selection",
+                                MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
             }
         }

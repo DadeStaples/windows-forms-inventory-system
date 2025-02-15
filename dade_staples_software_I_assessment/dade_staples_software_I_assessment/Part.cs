@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace dade_staples_software_I_assessment
 {
-    public partial class Part
+    public class Part
     {
         public int partID { get; set; }
         public string name { get; set; }
