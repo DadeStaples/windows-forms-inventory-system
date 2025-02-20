@@ -47,7 +47,7 @@ namespace dade_staples_software_I_assessment
         }
 
 
-        //this part will need to be edited for modify button, takes the info from thisPart and replaces item at that index
+        //this button will need to be deleted to make space for the add/modify buttons
         
         private void showButton_Click(object sender, EventArgs e)
         {

@@ -47,7 +47,9 @@ namespace dade_staples_software_I_assessment
 
         public static void addProduct(List<Part> associatedParts, int productID, string name, decimal price, int inStock, int min, int max)
         {
-            Products.Add(new Product(new BindingList<Part>(associatedParts), productID, name, price, inStock, min, max));
+            //Will need to new class for popup form, will need new dgv for associated parts and available parts with similar functions.
+
+            //Products.Add(new Product(new BindingList<Part>(associatedParts), productID, name, price, inStock, min, max));
         }
 
 
@@ -88,8 +90,12 @@ namespace dade_staples_software_I_assessment
         //addPart(Part) : void **TODO
         public static void addPart(int partID, string name, decimal price, int inStock, int min, int max)
         {
-            //Need to use InHouse or Outsourced classed to avoid calling abstract part class directly
-            //AllParts.Add(new Part(partID, name, price, inStock, min, max));
+            //Need to use InHouse or Outsourced classed to avoid calling abstract part class directly.
+
+
+            //Text field needs to change to reflect which radio buttons is selected.
+
+            //will need to make new classses for the user forms that pop up when button is clicked.
         }
 
         //deletePart(Part) : bool
