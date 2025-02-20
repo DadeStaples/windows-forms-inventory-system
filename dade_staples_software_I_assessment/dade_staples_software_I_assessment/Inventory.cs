@@ -101,7 +101,7 @@ namespace dade_staples_software_I_assessment
                 {
                     if (idToDelete == assocPart.partID)
                     {
-                        MessageBox.Show($"Part cannot be deleted, product '{product.name}' contains this part.",
+                        MessageBox.Show($"Part cannot be deleted, product '{product.name}' contains this part. Please delete any products that contain '{assocPart.name}' and try again.",
                                         "Product Conflict",
                                         MessageBoxButtons.OK,
                                         MessageBoxIcon.Warning);

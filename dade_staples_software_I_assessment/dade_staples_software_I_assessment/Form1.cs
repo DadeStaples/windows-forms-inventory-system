@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -24,6 +25,7 @@ namespace dade_staples_software_I_assessment
             dgvParts.ReadOnly = true;
             dgvParts.MultiSelect = false;
             dgvParts.AllowUserToAddRows = false;
+            //Will probably need to change so only ID, name, inventory, and price are show in dgv
 
             // data source for products
             dgvProducts.DataSource = Inventory.Products;
@@ -33,6 +35,8 @@ namespace dade_staples_software_I_assessment
             dgvProducts.ReadOnly = true;
             dgvProducts.MultiSelect = false;
             dgvProducts.AllowUserToAddRows = false;
+            //Will probably need to change so only ID, name, inventory, and price are show in dgv
+
 
         }
 
@@ -118,6 +122,50 @@ namespace dade_staples_software_I_assessment
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Information);
             }
+        }
+
+        private void partSearchButton_Click(object sender, EventArgs e)
+        {
+            var userInput = partsSearchBox.Text;
+
+
+            if (int.TryParse(userInput, out int number) && number > Inventory.AllParts.Count - 1)
+            {
+                MessageBox.Show("Number entered is outside of index range.",
+                "Invalid Search Query",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+    );
+            }
+            else if (int.TryParse(userInput, out int IDNumber))
+                {
+                var partFound = Inventory.lookupPart(IDNumber);
+                BindingList<Part> filteredParts = new BindingList<Part>(
+                Inventory.AllParts.Where(p => p.partID == (partFound.partID)).ToList()
+                );
+
+                dgvParts.DataSource = filteredParts;
+                dgvParts.Refresh();
+
+            }
+            else if(userInput == "")
+                {
+                dgvParts.DataSource = Inventory.AllParts;
+                dgvParts.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a part ID number to search.",
+                    "Invalid Search Query",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                    );
+            }
+        }
+
+        private void exitButton_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
