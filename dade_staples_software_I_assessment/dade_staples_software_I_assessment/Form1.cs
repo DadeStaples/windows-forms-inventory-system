@@ -162,10 +162,49 @@ namespace dade_staples_software_I_assessment
                     );
             }
         }
+        private void productSearchButton_Click(object sender, EventArgs e)
+        {
+            var userInput = productsSearchBox.Text;
 
+
+            if (int.TryParse(userInput, out int number) && number > Inventory.Products.Count - 1)
+            {
+                MessageBox.Show("Number entered is outside of index range.",
+                "Invalid Search Query",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning
+    );
+            }
+            else if (int.TryParse(userInput, out int IDNumber))
+            {
+                var productFound = Inventory.lookupProduct(IDNumber);
+                BindingList<Product> filteredProducts = new BindingList<Product>(
+                Inventory.Products.Where(p => p.productID == (productFound.productID)).ToList()
+                );
+
+                dgvProducts.DataSource = filteredProducts;
+                dgvParts.Refresh();
+
+            }
+            else if (userInput == "")
+            {
+                dgvProducts.DataSource = Inventory.Products;
+                dgvProducts.Refresh();
+            }
+            else
+            {
+                MessageBox.Show("Please enter a part ID number to search.",
+                    "Invalid Search Query",
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Warning
+                    );
+            }
+        }
         private void exitButton_Click(object sender, EventArgs e)
         {
             this.Close();
         }
+
+
     }
 }

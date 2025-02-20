@@ -36,6 +36,8 @@
             this.partsSearchBox = new System.Windows.Forms.TextBox();
             this.partSearchButton = new System.Windows.Forms.Button();
             this.exitButton = new System.Windows.Forms.Button();
+            this.productSearchButton = new System.Windows.Forms.Button();
+            this.productsSearchBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -118,11 +120,30 @@
             this.exitButton.UseVisualStyleBackColor = true;
             this.exitButton.Click += new System.EventHandler(this.exitButton_Click);
             // 
+            // productSearchButton
+            // 
+            this.productSearchButton.Location = new System.Drawing.Point(931, 23);
+            this.productSearchButton.Name = "productSearchButton";
+            this.productSearchButton.Size = new System.Drawing.Size(75, 23);
+            this.productSearchButton.TabIndex = 9;
+            this.productSearchButton.Text = "Search";
+            this.productSearchButton.UseVisualStyleBackColor = true;
+            this.productSearchButton.Click += new System.EventHandler(this.productSearchButton_Click);
+            // 
+            // productsSearchBox
+            // 
+            this.productsSearchBox.Location = new System.Drawing.Point(1012, 24);
+            this.productsSearchBox.Name = "productsSearchBox";
+            this.productsSearchBox.Size = new System.Drawing.Size(100, 22);
+            this.productsSearchBox.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.productSearchButton);
+            this.Controls.Add(this.productsSearchBox);
             this.Controls.Add(this.exitButton);
             this.Controls.Add(this.partSearchButton);
             this.Controls.Add(this.partsSearchBox);
@@ -150,6 +171,8 @@
         private System.Windows.Forms.TextBox partsSearchBox;
         private System.Windows.Forms.Button partSearchButton;
         private System.Windows.Forms.Button exitButton;
+        private System.Windows.Forms.Button productSearchButton;
+        private System.Windows.Forms.TextBox productsSearchBox;
     }
 }
 
