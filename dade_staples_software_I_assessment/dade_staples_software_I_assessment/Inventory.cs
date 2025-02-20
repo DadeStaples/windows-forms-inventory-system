@@ -45,11 +45,12 @@ namespace dade_staples_software_I_assessment
 
         // addProduct(Product) : void **TODO
 
-        public static void addProduct(List<Part> associatedParts, int productID, string name, decimal price, int inStock, int min, int max)
+        public static void addProduct(Product incomingProduct)
         {
             //Will need to new class for popup form, will need new dgv for associated parts and available parts with similar functions.
 
             //Products.Add(new Product(new BindingList<Part>(associatedParts), productID, name, price, inStock, min, max));
+            Products.Add(incomingProduct);
         }
 
 
@@ -87,15 +88,10 @@ namespace dade_staples_software_I_assessment
 
         //updateProduct(int, Product) : void **TODO
 
-        //addPart(Part) : void **TODO
-        public static void addPart(int partID, string name, decimal price, int inStock, int min, int max)
+        //addPart(Part) : void 
+        public static void addPart(Part incomingPart)
         {
-            //Need to use InHouse or Outsourced classed to avoid calling abstract part class directly.
-
-
-            //Text field needs to change to reflect which radio buttons is selected.
-
-            //will need to make new classses for the user forms that pop up when button is clicked.
+            AllParts.Add(incomingPart);
         }
 
         //deletePart(Part) : bool
@@ -149,6 +145,15 @@ namespace dade_staples_software_I_assessment
             //Use incoming idToUpdate to identify which part is being updated
             //Use incoming partToUpdate fields to replace part fields at given id
             //will probably need to refresh dgv in Form1.cs
+        }
+
+        //use this to auto generate a new ID for parts being added to AllParts
+        public static int newPartId()
+        {
+            if (AllParts.Count == 0)
+                return 1;
+
+            return AllParts.Max(p => p.partID) + 1;
         }
 
 

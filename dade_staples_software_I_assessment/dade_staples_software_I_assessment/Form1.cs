@@ -49,24 +49,24 @@ namespace dade_staples_software_I_assessment
 
         //this button will need to be deleted to make space for the add/modify buttons
         
-        private void showButton_Click(object sender, EventArgs e)
-        {
-            if (!dgvParts.CurrentRow.Selected) // setting condition as '!= true' causes issues with MessageBoxIcon, reason unknown
-            {
-                MessageBox.Show("No item has been selected.",
-                                "Invalid Selection", 
-                                MessageBoxButtons.OK, 
-                                MessageBoxIcon.Information);
-                return;
-            }
-            Part thisPart = dgvParts.CurrentRow.DataBoundItem as Part;
-            int Index = dgvParts.CurrentCell.RowIndex;
+        //private void showButton_Click(object sender, EventArgs e)
+        //{
+        //    if (!dgvParts.CurrentRow.Selected) // setting condition as '!= true' causes issues with MessageBoxIcon, reason unknown
+        //    {
+        //        MessageBox.Show("No item has been selected.",
+        //                        "Invalid Selection", 
+        //                        MessageBoxButtons.OK, 
+        //                        MessageBoxIcon.Information);
+        //        return;
+        //    }
+        //    Part thisPart = dgvParts.CurrentRow.DataBoundItem as Part;
+        //    int Index = dgvParts.CurrentCell.RowIndex;
 
-            MessageBox.Show(thisPart.name + " has been selected. Its Index in the dgv is " + Index,
-                            "Show Selection",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
-        }
+        //    MessageBox.Show(thisPart.name + " has been selected. Its Index in the dgv is " + Index,
+        //                    "Show Selection",
+        //                    MessageBoxButtons.OK,
+        //                    MessageBoxIcon.Information);
+        //}
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
@@ -205,6 +205,10 @@ namespace dade_staples_software_I_assessment
             this.Close();
         }
 
-
+        private void addPartButton_Click(object sender, EventArgs e)
+        {
+            AddPart addPart = new AddPart();
+            addPart.ShowDialog();
+        }
     }
 }
