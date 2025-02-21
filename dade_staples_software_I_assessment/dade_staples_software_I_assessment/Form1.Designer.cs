@@ -39,6 +39,7 @@
             this.productsSearchBox = new System.Windows.Forms.TextBox();
             this.addPartButton = new System.Windows.Forms.Button();
             this.modifyPartButton = new System.Windows.Forms.Button();
+            this.addProductButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -148,11 +149,22 @@
             this.modifyPartButton.UseVisualStyleBackColor = true;
             this.modifyPartButton.Click += new System.EventHandler(this.modifyPartButton_Click);
             // 
+            // addProductButton
+            // 
+            this.addProductButton.Location = new System.Drawing.Point(612, 387);
+            this.addProductButton.Name = "addProductButton";
+            this.addProductButton.Size = new System.Drawing.Size(165, 51);
+            this.addProductButton.TabIndex = 12;
+            this.addProductButton.Text = "Add Product";
+            this.addProductButton.UseVisualStyleBackColor = true;
+            this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.modifyPartButton);
             this.Controls.Add(this.addPartButton);
             this.Controls.Add(this.productSearchButton);
@@ -186,6 +198,7 @@
         private System.Windows.Forms.TextBox productsSearchBox;
         private System.Windows.Forms.Button addPartButton;
         private System.Windows.Forms.Button modifyPartButton;
+        private System.Windows.Forms.Button addProductButton;
     }
 }
 

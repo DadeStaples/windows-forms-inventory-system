@@ -1,0 +1,286 @@
+﻿namespace dade_staples_software_I_assessment
+{
+    partial class AddProduct
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            this.Cancel = new System.Windows.Forms.Button();
+            this.savePartButton = new System.Windows.Forms.Button();
+            this.maxLabel = new System.Windows.Forms.Label();
+            this.maxBox = new System.Windows.Forms.TextBox();
+            this.minLabel = new System.Windows.Forms.Label();
+            this.minBox = new System.Windows.Forms.TextBox();
+            this.stockLabel = new System.Windows.Forms.Label();
+            this.stockBox = new System.Windows.Forms.TextBox();
+            this.priceLabel = new System.Windows.Forms.Label();
+            this.priceBox = new System.Windows.Forms.TextBox();
+            this.nameLabel = new System.Windows.Forms.Label();
+            this.nameBox = new System.Windows.Forms.TextBox();
+            this.partIDLabel = new System.Windows.Forms.Label();
+            this.productIDBox = new System.Windows.Forms.TextBox();
+            this.dgvAvailableParts = new System.Windows.Forms.DataGridView();
+            this.dgvAssociatedParts = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.addPartButton = new System.Windows.Forms.Button();
+            this.removePartButton = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // Cancel
+            // 
+            this.Cancel.Location = new System.Drawing.Point(208, 353);
+            this.Cancel.Name = "Cancel";
+            this.Cancel.Size = new System.Drawing.Size(109, 47);
+            this.Cancel.TabIndex = 37;
+            this.Cancel.Text = "Cancel";
+            this.Cancel.UseVisualStyleBackColor = true;
+            this.Cancel.Click += new System.EventHandler(this.Cancel_Click);
+            // 
+            // savePartButton
+            // 
+            this.savePartButton.Location = new System.Drawing.Point(49, 353);
+            this.savePartButton.Name = "savePartButton";
+            this.savePartButton.Size = new System.Drawing.Size(109, 47);
+            this.savePartButton.TabIndex = 36;
+            this.savePartButton.Text = "Save";
+            this.savePartButton.UseVisualStyleBackColor = true;
+            this.savePartButton.Click += new System.EventHandler(this.savePartButton_Click);
+            // 
+            // maxLabel
+            // 
+            this.maxLabel.AutoSize = true;
+            this.maxLabel.Location = new System.Drawing.Point(81, 263);
+            this.maxLabel.Name = "maxLabel";
+            this.maxLabel.Size = new System.Drawing.Size(32, 16);
+            this.maxLabel.TabIndex = 33;
+            this.maxLabel.Text = "Max";
+            // 
+            // maxBox
+            // 
+            this.maxBox.Location = new System.Drawing.Point(134, 260);
+            this.maxBox.Name = "maxBox";
+            this.maxBox.Size = new System.Drawing.Size(100, 22);
+            this.maxBox.TabIndex = 32;
+            // 
+            // minLabel
+            // 
+            this.minLabel.AutoSize = true;
+            this.minLabel.Location = new System.Drawing.Point(81, 235);
+            this.minLabel.Name = "minLabel";
+            this.minLabel.Size = new System.Drawing.Size(28, 16);
+            this.minLabel.TabIndex = 31;
+            this.minLabel.Text = "Min";
+            // 
+            // minBox
+            // 
+            this.minBox.Location = new System.Drawing.Point(134, 232);
+            this.minBox.Name = "minBox";
+            this.minBox.Size = new System.Drawing.Size(100, 22);
+            this.minBox.TabIndex = 30;
+            // 
+            // stockLabel
+            // 
+            this.stockLabel.AutoSize = true;
+            this.stockLabel.Location = new System.Drawing.Point(81, 207);
+            this.stockLabel.Name = "stockLabel";
+            this.stockLabel.Size = new System.Drawing.Size(41, 16);
+            this.stockLabel.TabIndex = 29;
+            this.stockLabel.Text = "Stock";
+            // 
+            // stockBox
+            // 
+            this.stockBox.Location = new System.Drawing.Point(134, 204);
+            this.stockBox.Name = "stockBox";
+            this.stockBox.Size = new System.Drawing.Size(100, 22);
+            this.stockBox.TabIndex = 28;
+            // 
+            // priceLabel
+            // 
+            this.priceLabel.AutoSize = true;
+            this.priceLabel.Location = new System.Drawing.Point(81, 179);
+            this.priceLabel.Name = "priceLabel";
+            this.priceLabel.Size = new System.Drawing.Size(38, 16);
+            this.priceLabel.TabIndex = 27;
+            this.priceLabel.Text = "Price";
+            // 
+            // priceBox
+            // 
+            this.priceBox.Location = new System.Drawing.Point(134, 176);
+            this.priceBox.Name = "priceBox";
+            this.priceBox.Size = new System.Drawing.Size(100, 22);
+            this.priceBox.TabIndex = 26;
+            // 
+            // nameLabel
+            // 
+            this.nameLabel.AutoSize = true;
+            this.nameLabel.Location = new System.Drawing.Point(81, 151);
+            this.nameLabel.Name = "nameLabel";
+            this.nameLabel.Size = new System.Drawing.Size(44, 16);
+            this.nameLabel.TabIndex = 25;
+            this.nameLabel.Text = "Name";
+            // 
+            // nameBox
+            // 
+            this.nameBox.Location = new System.Drawing.Point(134, 148);
+            this.nameBox.Name = "nameBox";
+            this.nameBox.Size = new System.Drawing.Size(100, 22);
+            this.nameBox.TabIndex = 24;
+            // 
+            // partIDLabel
+            // 
+            this.partIDLabel.AutoSize = true;
+            this.partIDLabel.Location = new System.Drawing.Point(59, 123);
+            this.partIDLabel.Name = "partIDLabel";
+            this.partIDLabel.Size = new System.Drawing.Size(69, 16);
+            this.partIDLabel.TabIndex = 23;
+            this.partIDLabel.Text = "Product ID";
+            // 
+            // productIDBox
+            // 
+            this.productIDBox.Location = new System.Drawing.Point(134, 120);
+            this.productIDBox.Name = "productIDBox";
+            this.productIDBox.Size = new System.Drawing.Size(100, 22);
+            this.productIDBox.TabIndex = 22;
+            // 
+            // dgvAvailableParts
+            // 
+            this.dgvAvailableParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAvailableParts.Location = new System.Drawing.Point(409, 28);
+            this.dgvAvailableParts.Name = "dgvAvailableParts";
+            this.dgvAvailableParts.RowHeadersWidth = 51;
+            this.dgvAvailableParts.RowTemplate.Height = 24;
+            this.dgvAvailableParts.Size = new System.Drawing.Size(379, 150);
+            this.dgvAvailableParts.TabIndex = 38;
+            // 
+            // dgvAssociatedParts
+            // 
+            this.dgvAssociatedParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAssociatedParts.Location = new System.Drawing.Point(409, 250);
+            this.dgvAssociatedParts.Name = "dgvAssociatedParts";
+            this.dgvAssociatedParts.RowHeadersWidth = 51;
+            this.dgvAssociatedParts.RowTemplate.Height = 24;
+            this.dgvAssociatedParts.Size = new System.Drawing.Size(379, 150);
+            this.dgvAssociatedParts.TabIndex = 39;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(406, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Available Parts";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(406, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Associated Parts";
+            // 
+            // addPartButton
+            // 
+            this.addPartButton.Location = new System.Drawing.Point(679, 185);
+            this.addPartButton.Name = "addPartButton";
+            this.addPartButton.Size = new System.Drawing.Size(108, 23);
+            this.addPartButton.TabIndex = 42;
+            this.addPartButton.Text = "Add Part";
+            this.addPartButton.UseVisualStyleBackColor = true;
+            this.addPartButton.Click += new System.EventHandler(this.addPartButton_Click);
+            // 
+            // removePartButton
+            // 
+            this.removePartButton.Location = new System.Drawing.Point(680, 406);
+            this.removePartButton.Name = "removePartButton";
+            this.removePartButton.Size = new System.Drawing.Size(108, 23);
+            this.removePartButton.TabIndex = 43;
+            this.removePartButton.Text = "Remove Part";
+            this.removePartButton.UseVisualStyleBackColor = true;
+            this.removePartButton.Click += new System.EventHandler(this.removePartButton_Click);
+            // 
+            // AddProduct
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.removePartButton);
+            this.Controls.Add(this.addPartButton);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dgvAssociatedParts);
+            this.Controls.Add(this.dgvAvailableParts);
+            this.Controls.Add(this.Cancel);
+            this.Controls.Add(this.savePartButton);
+            this.Controls.Add(this.maxLabel);
+            this.Controls.Add(this.maxBox);
+            this.Controls.Add(this.minLabel);
+            this.Controls.Add(this.minBox);
+            this.Controls.Add(this.stockLabel);
+            this.Controls.Add(this.stockBox);
+            this.Controls.Add(this.priceLabel);
+            this.Controls.Add(this.priceBox);
+            this.Controls.Add(this.nameLabel);
+            this.Controls.Add(this.nameBox);
+            this.Controls.Add(this.partIDLabel);
+            this.Controls.Add(this.productIDBox);
+            this.Name = "AddProduct";
+            this.Text = "AddProduct";
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Button Cancel;
+        private System.Windows.Forms.Button savePartButton;
+        private System.Windows.Forms.Label maxLabel;
+        private System.Windows.Forms.TextBox maxBox;
+        private System.Windows.Forms.Label minLabel;
+        private System.Windows.Forms.TextBox minBox;
+        private System.Windows.Forms.Label stockLabel;
+        private System.Windows.Forms.TextBox stockBox;
+        private System.Windows.Forms.Label priceLabel;
+        private System.Windows.Forms.TextBox priceBox;
+        private System.Windows.Forms.Label nameLabel;
+        private System.Windows.Forms.TextBox nameBox;
+        private System.Windows.Forms.Label partIDLabel;
+        private System.Windows.Forms.TextBox productIDBox;
+        private System.Windows.Forms.DataGridView dgvAvailableParts;
+        private System.Windows.Forms.DataGridView dgvAssociatedParts;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button addPartButton;
+        private System.Windows.Forms.Button removePartButton;
+    }
+}

@@ -40,7 +40,10 @@ namespace dade_staples_software_I_assessment
 
                 if (min > max)
                 {
-                    MessageBox.Show("Min cannot be greater than Max.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Min cannot be greater than Max.", 
+                                    "Input Error", 
+                                    MessageBoxButtons.OK, 
+                                    MessageBoxIcon.Warning);
                     return;
                 }
 

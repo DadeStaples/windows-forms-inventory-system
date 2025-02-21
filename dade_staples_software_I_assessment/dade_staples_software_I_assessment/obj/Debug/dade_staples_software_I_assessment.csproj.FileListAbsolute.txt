@@ -10,3 +10,4 @@ C:\WGU\Software I\windows-forms-inventory-system\dade_staples_software_I_assessm
 C:\WGU\Software I\windows-forms-inventory-system\dade_staples_software_I_assessment\dade_staples_software_I_assessment\obj\Debug\dade_staples_software_I_assessment.pdb
 C:\WGU\Software I\windows-forms-inventory-system\dade_staples_software_I_assessment\dade_staples_software_I_assessment\obj\Debug\dade_staples_software_I_assessment.AddPart.resources
 C:\WGU\Software I\windows-forms-inventory-system\dade_staples_software_I_assessment\dade_staples_software_I_assessment\obj\Debug\dade_staples_software_I_assessment.ModifyPart.resources
+C:\WGU\Software I\windows-forms-inventory-system\dade_staples_software_I_assessment\dade_staples_software_I_assessment\obj\Debug\dade_staples_software_I_assessment.AddProduct.resources

@@ -47,9 +47,6 @@ namespace dade_staples_software_I_assessment
 
         public static void addProduct(Product incomingProduct)
         {
-            //Will need to new class for popup form, will need new dgv for associated parts and available parts with similar functions.
-
-            //Products.Add(new Product(new BindingList<Part>(associatedParts), productID, name, price, inStock, min, max));
             Products.Add(incomingProduct);
         }
 
@@ -156,6 +153,14 @@ namespace dade_staples_software_I_assessment
                 return 1;
 
             return AllParts.Max(p => p.partID) + 1;
+        }
+
+        public static int newProductId()
+        {
+            if (Products.Count == 0)
+                return 1;
+
+            return Products.Max(p => p.productID) + 1;
         }
 
 

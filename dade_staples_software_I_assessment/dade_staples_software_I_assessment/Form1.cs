@@ -217,5 +217,11 @@ namespace dade_staples_software_I_assessment
             ModifyPart modifyPart = new ModifyPart(selectedPart);
             modifyPart.ShowDialog();
         }
+
+        private void addProductButton_Click(object sender, EventArgs e)
+        {
+            AddProduct addProduct = new AddProduct();
+            addProduct.ShowDialog();
+        }
     }
 }
