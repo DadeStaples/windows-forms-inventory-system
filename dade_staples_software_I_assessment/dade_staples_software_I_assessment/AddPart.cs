@@ -27,26 +27,6 @@ namespace dade_staples_software_I_assessment
 
         }
 
-
-        //need to check which radio button is clicked and update the form accordingly
-
-        //private void inHouseCheck(object sender, EventArgs e)
-        //{
-        //    machineIDBox.Enabled = true;
-        //    machineIDLabel.Enabled = true;
-        //    companyBox.Enabled = false;
-        //    companyLabel.Enabled = false;
-        //    companyBox.Clear();
-        //}
-
-        //private void outsourceCheck(object sender, EventArgs e)
-        //{
-        //    machineIDBox.Enabled = false;
-        //    machineIDBox.Clear();
-        //    companyBox.Enabled = true;
-        //    companyLabel.Enabled = true;
-        //}
-
         private void savePartButton_Click(object sender, EventArgs e)
         {
             try

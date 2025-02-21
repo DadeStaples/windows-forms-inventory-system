@@ -210,5 +210,12 @@ namespace dade_staples_software_I_assessment
             AddPart addPart = new AddPart();
             addPart.ShowDialog();
         }
+
+        private void modifyPartButton_Click(object sender, EventArgs e)
+        {
+            Part selectedPart = dgvParts.CurrentRow.DataBoundItem as Part;
+            ModifyPart modifyPart = new ModifyPart(selectedPart);
+            modifyPart.ShowDialog();
+        }
     }
 }

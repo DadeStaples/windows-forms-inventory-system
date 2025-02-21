@@ -38,6 +38,7 @@
             this.productSearchButton = new System.Windows.Forms.Button();
             this.productsSearchBox = new System.Windows.Forms.TextBox();
             this.addPartButton = new System.Windows.Forms.Button();
+            this.modifyPartButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -104,7 +105,7 @@
             // 
             this.exitButton.Location = new System.Drawing.Point(972, 444);
             this.exitButton.Name = "exitButton";
-            this.exitButton.Size = new System.Drawing.Size(140, 42);
+            this.exitButton.Size = new System.Drawing.Size(140, 51);
             this.exitButton.TabIndex = 7;
             this.exitButton.Text = "Exit";
             this.exitButton.UseVisualStyleBackColor = true;
@@ -137,11 +138,22 @@
             this.addPartButton.UseVisualStyleBackColor = true;
             this.addPartButton.Click += new System.EventHandler(this.addPartButton_Click);
             // 
+            // modifyPartButton
+            // 
+            this.modifyPartButton.Location = new System.Drawing.Point(41, 444);
+            this.modifyPartButton.Name = "modifyPartButton";
+            this.modifyPartButton.Size = new System.Drawing.Size(165, 51);
+            this.modifyPartButton.TabIndex = 11;
+            this.modifyPartButton.Text = "Modify Part";
+            this.modifyPartButton.UseVisualStyleBackColor = true;
+            this.modifyPartButton.Click += new System.EventHandler(this.modifyPartButton_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.modifyPartButton);
             this.Controls.Add(this.addPartButton);
             this.Controls.Add(this.productSearchButton);
             this.Controls.Add(this.productsSearchBox);
@@ -173,6 +185,7 @@
         private System.Windows.Forms.Button productSearchButton;
         private System.Windows.Forms.TextBox productsSearchBox;
         private System.Windows.Forms.Button addPartButton;
+        private System.Windows.Forms.Button modifyPartButton;
     }
 }
 

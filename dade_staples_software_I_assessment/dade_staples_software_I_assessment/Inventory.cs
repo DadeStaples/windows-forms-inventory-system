@@ -87,6 +87,10 @@ namespace dade_staples_software_I_assessment
         }
 
         //updateProduct(int, Product) : void **TODO
+        public static void updateProduct(int idToUpdate, Product incomingProduct)
+        {
+            Products[idToUpdate] = incomingProduct;
+        }
 
         //addPart(Part) : void 
         public static void addPart(Part incomingPart)
@@ -140,11 +144,9 @@ namespace dade_staples_software_I_assessment
         }
 
         //updatePart(int, Part) : void **TODO
-        public static void updatePart( int idToUpdate, Part partToUpdate )
+        public static void updatePart( int idToUpdate, Part incomingPart )
         {
-            //Use incoming idToUpdate to identify which part is being updated
-            //Use incoming partToUpdate fields to replace part fields at given id
-            //will probably need to refresh dgv in Form1.cs
+            AllParts[idToUpdate] = incomingPart;          
         }
 
         //use this to auto generate a new ID for parts being added to AllParts
