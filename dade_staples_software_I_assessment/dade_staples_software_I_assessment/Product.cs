@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Windows.Forms;
 
 namespace dade_staples_software_I_assessment
 {
@@ -17,6 +18,8 @@ namespace dade_staples_software_I_assessment
         public int min { get; set; }
         public int max { get; set; }
 
+        public BindingList<Part> tempPartsList = new BindingList<Part>();
+
         public Product(BindingList<Part> AssociatedParts, int productID, string name, decimal price, int inStock, int min, int max)
         {
             this.associatedParts = AssociatedParts ?? new BindingList<Part>();
@@ -28,9 +31,52 @@ namespace dade_staples_software_I_assessment
             this.max = max;
         }
 
-        // **TODO implement addAssociated part,recieves Part arguement, return is void **
+        // addAssociatedPart(Part) : void
 
-        // **TODO implement lookupAssociatedPart, recieves int arguement,  returns part **
+        public void addAssociatedPart(Part part)
+        {
+            var partAdded = false;
+
+            foreach (var associatedPart in associatedParts)
+            {
+                if (part.partID == associatedPart.partID)
+                {
+                    partAdded = true;
+                }
+
+            }
+
+            if (!partAdded)
+            {
+                associatedParts.Add(part);
+            }
+            else
+            {
+                MessageBox.Show("Part has already been added. Please select another part",
+                                "Invalid Selection",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+        }
+
+
+        // removeAssociatedPart(int) : Bool
+
+        public bool removeAssociatedPart(int idToDelete)
+        {
+            foreach (Part part in associatedParts)
+            {
+                if (part.partID == idToDelete)
+                {
+                    associatedParts.Remove(part);
+                    return true;
+                }
+
+            }
+                return false;
+        }
+
+        // lookupAssociatedPart(int) : Part
 
         public static Product lookupAssociatedPart(int getId)
         {

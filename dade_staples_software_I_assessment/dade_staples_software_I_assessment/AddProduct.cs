@@ -36,43 +36,36 @@ namespace dade_staples_software_I_assessment
             productIDBox.Text = Inventory.newProductId().ToString();
         }
 
+
         private void Cancel_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        private Product currentProduct = new Product(new BindingList<Part>(), 0, "", 0, 0, 0, 0);
+
         private void addPartButton_Click(object sender, EventArgs e)
         {
-            var partAdded = false;
             Part selectedPart = dgvAvailableParts.CurrentRow.DataBoundItem as Part;
-            foreach(Part part in tempPartsList)
-            {
-                if (part.partID == selectedPart.partID)
-                {
-                    partAdded = true; break;
-                }
-            }
 
-            if (!partAdded)
+            if (selectedPart != null)
             {
-            tempPartsList.Add(selectedPart);
-            dgvAssociatedParts.Refresh();
-            }
-            else
-            {
-                MessageBox.Show("Part has already been added. Please select another part",
-                                "Invalid Selection",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
+                currentProduct.addAssociatedPart(selectedPart);
+                dgvAssociatedParts.DataSource = currentProduct.associatedParts;
             }
         }
 
+
         private void removePartButton_Click(object sender, EventArgs e)
         {
-            Part selectedPart = dgvAssociatedParts.CurrentRow.DataBoundItem as Part;
-            if (selectedPart != null)
+            if (dgvAssociatedParts.CurrentRow != null)
             {
-                tempPartsList.Remove(selectedPart);
+                Part selectedPart = dgvAssociatedParts.CurrentRow.DataBoundItem as Part;
+
+                if (selectedPart != null)
+                {
+                    currentProduct.removeAssociatedPart(selectedPart.partID);
+                }
             }
             else
             {
@@ -81,8 +74,8 @@ namespace dade_staples_software_I_assessment
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
-
         }
+
 
         private void savePartButton_Click(object sender, EventArgs e)
         {

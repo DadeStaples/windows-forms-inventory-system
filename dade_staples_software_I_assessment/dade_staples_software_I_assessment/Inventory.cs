@@ -113,11 +113,11 @@ namespace dade_staples_software_I_assessment
                 }
             }
 
-            for (int ctr = AllParts.Count - 1; ctr >= 0; ctr--)
+            foreach (Part part in AllParts)
             {
-                if (AllParts[ctr].partID == idToDelete)
+                if (part.partID == idToDelete)
                 {
-                    AllParts.RemoveAt(ctr); 
+                    AllParts.Remove(part); 
                     return true;
                 }
             }
@@ -129,18 +129,18 @@ namespace dade_staples_software_I_assessment
         public static Part lookupPart(int getId)
         {
 
-            for (int ctr = AllParts.Count - 1; ctr >= 0; ctr--)
+            foreach (Part part in AllParts)
             {
-                if (AllParts[ctr].partID == getId)
+                if (part.partID == getId)
                 {
-                    return AllParts[ctr];
+                    return part;
                 }
             }
             return null;
 
         }
 
-        //updatePart(int, Part) : void **TODO
+        //updatePart(int, Part) : void
         public static void updatePart( int idToUpdate, Part incomingPart )
         {
             AllParts[idToUpdate] = incomingPart;          
