@@ -35,6 +35,7 @@ namespace dade_staples_software_I_assessment
             dgvProducts.ReadOnly = true;
             dgvProducts.MultiSelect = false;
             dgvProducts.AllowUserToAddRows = false;
+
             //Will probably need to change so only ID, name, inventory, and price are show in dgv
 
 
@@ -46,27 +47,6 @@ namespace dade_staples_software_I_assessment
             dgvProducts.ClearSelection();
         }
 
-
-        //this button will need to be deleted to make space for the add/modify buttons
-        
-        //private void showButton_Click(object sender, EventArgs e)
-        //{
-        //    if (!dgvParts.CurrentRow.Selected) // setting condition as '!= true' causes issues with MessageBoxIcon, reason unknown
-        //    {
-        //        MessageBox.Show("No item has been selected.",
-        //                        "Invalid Selection", 
-        //                        MessageBoxButtons.OK, 
-        //                        MessageBoxIcon.Information);
-        //        return;
-        //    }
-        //    Part thisPart = dgvParts.CurrentRow.DataBoundItem as Part;
-        //    int Index = dgvParts.CurrentCell.RowIndex;
-
-        //    MessageBox.Show(thisPart.name + " has been selected. Its Index in the dgv is " + Index,
-        //                    "Show Selection",
-        //                    MessageBoxButtons.OK,
-        //                    MessageBoxIcon.Information);
-        //}
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
@@ -222,6 +202,13 @@ namespace dade_staples_software_I_assessment
         {
             AddProduct addProduct = new AddProduct();
             addProduct.ShowDialog();
+        }
+
+        private void modifyProductButton_Click(object sender, EventArgs e)
+        {
+            Product selectedProduct = dgvProducts.CurrentRow.DataBoundItem as Product;
+            ModifyProduct modifyProduct = new ModifyProduct(selectedProduct);
+            modifyProduct.ShowDialog();
         }
     }
 }

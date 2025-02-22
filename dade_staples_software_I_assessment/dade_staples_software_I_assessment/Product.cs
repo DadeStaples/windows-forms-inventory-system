@@ -78,10 +78,16 @@ namespace dade_staples_software_I_assessment
 
         // lookupAssociatedPart(int) : Part
 
-        public static Product lookupAssociatedPart(int getId)
+        public Part lookupAssociatedPart(int getId)
         {
 
-            // lookup code goes here
+           foreach(Part part in associatedParts)
+            {
+                if (part.partID == getId)
+                {
+                    return part;
+                }
+            }
             return null;
 
         }

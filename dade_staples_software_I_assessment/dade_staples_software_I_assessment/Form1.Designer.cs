@@ -40,6 +40,20 @@
             this.addPartButton = new System.Windows.Forms.Button();
             this.modifyPartButton = new System.Windows.Forms.Button();
             this.addProductButton = new System.Windows.Forms.Button();
+            this.modifyProductButton = new System.Windows.Forms.Button();
+            this.productID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.productMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.partName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Instock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Min = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Max = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Manufacturer = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProducts)).BeginInit();
             this.SuspendLayout();
@@ -47,6 +61,14 @@
             // dgvParts
             // 
             this.dgvParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
+            this.partName,
+            this.Price,
+            this.Instock,
+            this.Min,
+            this.Max,
+            this.Manufacturer});
             this.dgvParts.Location = new System.Drawing.Point(41, 52);
             this.dgvParts.Name = "dgvParts";
             this.dgvParts.RowHeadersWidth = 51;
@@ -58,6 +80,13 @@
             // dgvProducts
             // 
             this.dgvProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProducts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.productID,
+            this.productName,
+            this.productPrice,
+            this.productStock,
+            this.productMin,
+            this.productMax});
             this.dgvProducts.Location = new System.Drawing.Point(612, 52);
             this.dgvProducts.Name = "dgvProducts";
             this.dgvProducts.RowHeadersWidth = 51;
@@ -159,11 +188,131 @@
             this.addProductButton.UseVisualStyleBackColor = true;
             this.addProductButton.Click += new System.EventHandler(this.addProductButton_Click);
             // 
+            // modifyProductButton
+            // 
+            this.modifyProductButton.Location = new System.Drawing.Point(612, 453);
+            this.modifyProductButton.Name = "modifyProductButton";
+            this.modifyProductButton.Size = new System.Drawing.Size(165, 51);
+            this.modifyProductButton.TabIndex = 13;
+            this.modifyProductButton.Text = "Modify Product";
+            this.modifyProductButton.UseVisualStyleBackColor = true;
+            this.modifyProductButton.Click += new System.EventHandler(this.modifyProductButton_Click);
+            // 
+            // productID
+            // 
+            this.productID.DataPropertyName = "productID";
+            this.productID.HeaderText = "Product ID";
+            this.productID.MinimumWidth = 6;
+            this.productID.Name = "productID";
+            this.productID.Width = 125;
+            // 
+            // productName
+            // 
+            this.productName.DataPropertyName = "name";
+            this.productName.HeaderText = "Name";
+            this.productName.MinimumWidth = 6;
+            this.productName.Name = "productName";
+            this.productName.Width = 125;
+            // 
+            // productPrice
+            // 
+            this.productPrice.DataPropertyName = "price";
+            this.productPrice.HeaderText = "Price";
+            this.productPrice.MinimumWidth = 6;
+            this.productPrice.Name = "productPrice";
+            this.productPrice.Width = 125;
+            // 
+            // productStock
+            // 
+            this.productStock.DataPropertyName = "inStock";
+            this.productStock.HeaderText = "In Stock";
+            this.productStock.MinimumWidth = 6;
+            this.productStock.Name = "productStock";
+            this.productStock.Width = 125;
+            // 
+            // productMin
+            // 
+            this.productMin.DataPropertyName = "min";
+            this.productMin.HeaderText = "Min";
+            this.productMin.MinimumWidth = 6;
+            this.productMin.Name = "productMin";
+            this.productMin.Visible = false;
+            this.productMin.Width = 110;
+            // 
+            // productMax
+            // 
+            this.productMax.DataPropertyName = "max";
+            this.productMax.HeaderText = "Max";
+            this.productMax.MinimumWidth = 6;
+            this.productMax.Name = "productMax";
+            this.productMax.Visible = false;
+            this.productMax.Width = 110;
+            // 
+            // ID
+            // 
+            this.ID.DataPropertyName = "partID";
+            this.ID.HeaderText = "Part ID";
+            this.ID.MinimumWidth = 6;
+            this.ID.Name = "ID";
+            this.ID.Width = 125;
+            // 
+            // partName
+            // 
+            this.partName.DataPropertyName = "name";
+            this.partName.HeaderText = "Name";
+            this.partName.MinimumWidth = 6;
+            this.partName.Name = "partName";
+            this.partName.Width = 125;
+            // 
+            // Price
+            // 
+            this.Price.DataPropertyName = "price";
+            this.Price.HeaderText = "Price";
+            this.Price.MinimumWidth = 6;
+            this.Price.Name = "Price";
+            this.Price.Width = 125;
+            // 
+            // Instock
+            // 
+            this.Instock.DataPropertyName = "inStock";
+            this.Instock.HeaderText = "In Stock";
+            this.Instock.MinimumWidth = 6;
+            this.Instock.Name = "Instock";
+            this.Instock.Width = 125;
+            // 
+            // Min
+            // 
+            this.Min.DataPropertyName = "min";
+            this.Min.HeaderText = "Min";
+            this.Min.MinimumWidth = 6;
+            this.Min.Name = "Min";
+            this.Min.Visible = false;
+            this.Min.Width = 125;
+            // 
+            // Max
+            // 
+            this.Max.DataPropertyName = "max";
+            this.Max.HeaderText = "Max";
+            this.Max.MinimumWidth = 6;
+            this.Max.Name = "Max";
+            this.Max.Visible = false;
+            this.Max.Width = 125;
+            // 
+            // Manufacturer
+            // 
+            this.Manufacturer.DataPropertyName = "manufactureType";
+            this.Manufacturer.HeaderText = "Manufacturer";
+            this.Manufacturer.MinimumWidth = 6;
+            this.Manufacturer.Name = "Manufacturer";
+            this.Manufacturer.Visible = false;
+            this.Manufacturer.Width = 125;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1157, 516);
+            this.Controls.Add(this.modifyProductButton);
             this.Controls.Add(this.addProductButton);
             this.Controls.Add(this.modifyPartButton);
             this.Controls.Add(this.addPartButton);
@@ -199,6 +348,20 @@
         private System.Windows.Forms.Button addPartButton;
         private System.Windows.Forms.Button modifyPartButton;
         private System.Windows.Forms.Button addProductButton;
+        private System.Windows.Forms.Button modifyProductButton;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productPrice;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productStock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productMin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn productMax;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn partName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Price;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Instock;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Min;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Max;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Manufacturer;
     }
 }
 
