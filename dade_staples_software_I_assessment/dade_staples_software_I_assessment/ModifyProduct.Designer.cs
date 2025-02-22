@@ -35,7 +35,21 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvAssociatedParts = new System.Windows.Forms.DataGridView();
+            this.assocPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocPartStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.assocManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvAvailableParts = new System.Windows.Forms.DataGridView();
+            this.availPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availPartStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.availManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Cancel = new System.Windows.Forms.Button();
             this.savePartButton = new System.Windows.Forms.Button();
             this.maxLabel = new System.Windows.Forms.Label();
@@ -50,20 +64,6 @@
             this.nameBox = new System.Windows.Forms.TextBox();
             this.partIDLabel = new System.Windows.Forms.Label();
             this.productIDBox = new System.Windows.Forms.TextBox();
-            this.availPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availPartStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.availManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartStock = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.assocManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).BeginInit();
             this.SuspendLayout();
@@ -141,6 +141,65 @@
             this.dgvAssociatedParts.Size = new System.Drawing.Size(379, 150);
             this.dgvAssociatedParts.TabIndex = 61;
             // 
+            // assocPartID
+            // 
+            this.assocPartID.DataPropertyName = "partID";
+            this.assocPartID.HeaderText = "Part ID";
+            this.assocPartID.MinimumWidth = 6;
+            this.assocPartID.Name = "assocPartID";
+            this.assocPartID.Width = 125;
+            // 
+            // assocPartName
+            // 
+            this.assocPartName.DataPropertyName = "name";
+            this.assocPartName.HeaderText = "Name";
+            this.assocPartName.MinimumWidth = 6;
+            this.assocPartName.Name = "assocPartName";
+            this.assocPartName.Width = 125;
+            // 
+            // assocPartPrice
+            // 
+            this.assocPartPrice.DataPropertyName = "price";
+            this.assocPartPrice.HeaderText = "Price";
+            this.assocPartPrice.MinimumWidth = 6;
+            this.assocPartPrice.Name = "assocPartPrice";
+            this.assocPartPrice.Width = 125;
+            // 
+            // assocPartStock
+            // 
+            this.assocPartStock.DataPropertyName = "inStock";
+            this.assocPartStock.HeaderText = "In Stock";
+            this.assocPartStock.MinimumWidth = 6;
+            this.assocPartStock.Name = "assocPartStock";
+            this.assocPartStock.Width = 125;
+            // 
+            // assocPartMin
+            // 
+            this.assocPartMin.DataPropertyName = "min";
+            this.assocPartMin.HeaderText = "Min";
+            this.assocPartMin.MinimumWidth = 6;
+            this.assocPartMin.Name = "assocPartMin";
+            this.assocPartMin.Visible = false;
+            this.assocPartMin.Width = 125;
+            // 
+            // assocPartMax
+            // 
+            this.assocPartMax.DataPropertyName = "max";
+            this.assocPartMax.HeaderText = "Max";
+            this.assocPartMax.MinimumWidth = 6;
+            this.assocPartMax.Name = "assocPartMax";
+            this.assocPartMax.Visible = false;
+            this.assocPartMax.Width = 125;
+            // 
+            // assocManufactureType
+            // 
+            this.assocManufactureType.DataPropertyName = "manufactureType";
+            this.assocManufactureType.HeaderText = "Manufacturer";
+            this.assocManufactureType.MinimumWidth = 6;
+            this.assocManufactureType.Name = "assocManufactureType";
+            this.assocManufactureType.Visible = false;
+            this.assocManufactureType.Width = 125;
+            // 
             // dgvAvailableParts
             // 
             this.dgvAvailableParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -158,6 +217,65 @@
             this.dgvAvailableParts.RowTemplate.Height = 24;
             this.dgvAvailableParts.Size = new System.Drawing.Size(379, 150);
             this.dgvAvailableParts.TabIndex = 60;
+            // 
+            // availPartID
+            // 
+            this.availPartID.DataPropertyName = "partID";
+            this.availPartID.HeaderText = "Part ID";
+            this.availPartID.MinimumWidth = 6;
+            this.availPartID.Name = "availPartID";
+            this.availPartID.Width = 125;
+            // 
+            // availPartName
+            // 
+            this.availPartName.DataPropertyName = "name";
+            this.availPartName.HeaderText = "Name";
+            this.availPartName.MinimumWidth = 6;
+            this.availPartName.Name = "availPartName";
+            this.availPartName.Width = 125;
+            // 
+            // availPartPrice
+            // 
+            this.availPartPrice.DataPropertyName = "price";
+            this.availPartPrice.HeaderText = "Price";
+            this.availPartPrice.MinimumWidth = 6;
+            this.availPartPrice.Name = "availPartPrice";
+            this.availPartPrice.Width = 125;
+            // 
+            // availPartStock
+            // 
+            this.availPartStock.DataPropertyName = "inStock";
+            this.availPartStock.HeaderText = "In Stock";
+            this.availPartStock.MinimumWidth = 6;
+            this.availPartStock.Name = "availPartStock";
+            this.availPartStock.Width = 125;
+            // 
+            // availPartMin
+            // 
+            this.availPartMin.DataPropertyName = "min";
+            this.availPartMin.HeaderText = "Min";
+            this.availPartMin.MinimumWidth = 6;
+            this.availPartMin.Name = "availPartMin";
+            this.availPartMin.Visible = false;
+            this.availPartMin.Width = 125;
+            // 
+            // availPartMax
+            // 
+            this.availPartMax.DataPropertyName = "max";
+            this.availPartMax.HeaderText = "Max";
+            this.availPartMax.MinimumWidth = 6;
+            this.availPartMax.Name = "availPartMax";
+            this.availPartMax.Visible = false;
+            this.availPartMax.Width = 125;
+            // 
+            // availManufactureType
+            // 
+            this.availManufactureType.DataPropertyName = "manufactureType";
+            this.availManufactureType.HeaderText = "Manufacturer";
+            this.availManufactureType.MinimumWidth = 6;
+            this.availManufactureType.Name = "availManufactureType";
+            this.availManufactureType.Visible = false;
+            this.availManufactureType.Width = 125;
             // 
             // Cancel
             // 
@@ -275,124 +393,6 @@
             this.productIDBox.Size = new System.Drawing.Size(100, 22);
             this.productIDBox.TabIndex = 46;
             // 
-            // availPartID
-            // 
-            this.availPartID.DataPropertyName = "partID";
-            this.availPartID.HeaderText = "Part ID";
-            this.availPartID.MinimumWidth = 6;
-            this.availPartID.Name = "availPartID";
-            this.availPartID.Width = 125;
-            // 
-            // availPartName
-            // 
-            this.availPartName.DataPropertyName = "name";
-            this.availPartName.HeaderText = "Name";
-            this.availPartName.MinimumWidth = 6;
-            this.availPartName.Name = "availPartName";
-            this.availPartName.Width = 125;
-            // 
-            // availPartPrice
-            // 
-            this.availPartPrice.DataPropertyName = "price";
-            this.availPartPrice.HeaderText = "Price";
-            this.availPartPrice.MinimumWidth = 6;
-            this.availPartPrice.Name = "availPartPrice";
-            this.availPartPrice.Width = 125;
-            // 
-            // availPartStock
-            // 
-            this.availPartStock.DataPropertyName = "inStock";
-            this.availPartStock.HeaderText = "In Stock";
-            this.availPartStock.MinimumWidth = 6;
-            this.availPartStock.Name = "availPartStock";
-            this.availPartStock.Width = 125;
-            // 
-            // availPartMin
-            // 
-            this.availPartMin.DataPropertyName = "min";
-            this.availPartMin.HeaderText = "Min";
-            this.availPartMin.MinimumWidth = 6;
-            this.availPartMin.Name = "availPartMin";
-            this.availPartMin.Visible = false;
-            this.availPartMin.Width = 125;
-            // 
-            // availPartMax
-            // 
-            this.availPartMax.DataPropertyName = "max";
-            this.availPartMax.HeaderText = "Max";
-            this.availPartMax.MinimumWidth = 6;
-            this.availPartMax.Name = "availPartMax";
-            this.availPartMax.Visible = false;
-            this.availPartMax.Width = 125;
-            // 
-            // availManufactureType
-            // 
-            this.availManufactureType.DataPropertyName = "manufactureType";
-            this.availManufactureType.HeaderText = "Manufacturer";
-            this.availManufactureType.MinimumWidth = 6;
-            this.availManufactureType.Name = "availManufactureType";
-            this.availManufactureType.Visible = false;
-            this.availManufactureType.Width = 125;
-            // 
-            // assocPartID
-            // 
-            this.assocPartID.DataPropertyName = "partID";
-            this.assocPartID.HeaderText = "Part ID";
-            this.assocPartID.MinimumWidth = 6;
-            this.assocPartID.Name = "assocPartID";
-            this.assocPartID.Width = 125;
-            // 
-            // assocPartName
-            // 
-            this.assocPartName.DataPropertyName = "name";
-            this.assocPartName.HeaderText = "Name";
-            this.assocPartName.MinimumWidth = 6;
-            this.assocPartName.Name = "assocPartName";
-            this.assocPartName.Width = 125;
-            // 
-            // assocPartPrice
-            // 
-            this.assocPartPrice.DataPropertyName = "price";
-            this.assocPartPrice.HeaderText = "Price";
-            this.assocPartPrice.MinimumWidth = 6;
-            this.assocPartPrice.Name = "assocPartPrice";
-            this.assocPartPrice.Width = 125;
-            // 
-            // assocPartStock
-            // 
-            this.assocPartStock.DataPropertyName = "inStock";
-            this.assocPartStock.HeaderText = "In Stock";
-            this.assocPartStock.MinimumWidth = 6;
-            this.assocPartStock.Name = "assocPartStock";
-            this.assocPartStock.Width = 125;
-            // 
-            // assocPartMin
-            // 
-            this.assocPartMin.DataPropertyName = "min";
-            this.assocPartMin.HeaderText = "Min";
-            this.assocPartMin.MinimumWidth = 6;
-            this.assocPartMin.Name = "assocPartMin";
-            this.assocPartMin.Visible = false;
-            this.assocPartMin.Width = 125;
-            // 
-            // assocPartMax
-            // 
-            this.assocPartMax.DataPropertyName = "max";
-            this.assocPartMax.HeaderText = "Max";
-            this.assocPartMax.MinimumWidth = 6;
-            this.assocPartMax.Name = "assocPartMax";
-            this.assocPartMax.Visible = false;
-            this.assocPartMax.Width = 125;
-            // 
-            // assocManufactureType
-            // 
-            this.assocManufactureType.DataPropertyName = "manufactureType";
-            this.assocManufactureType.HeaderText = "Manufacturer";
-            this.assocManufactureType.MinimumWidth = 6;
-            this.assocManufactureType.Name = "assocManufactureType";
-            this.assocManufactureType.Visible = false;
-            this.assocManufactureType.Width = 125;
-            // 
             // ModifyProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -421,7 +421,7 @@
             this.Controls.Add(this.partIDLabel);
             this.Controls.Add(this.productIDBox);
             this.Name = "ModifyProduct";
-            this.Text = "ModifyProduct";
+            this.Text = "Modify Product";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).EndInit();
             this.ResumeLayout(false);

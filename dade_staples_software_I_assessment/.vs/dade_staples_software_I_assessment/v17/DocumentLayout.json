@@ -3,36 +3,48 @@
   "WorkspaceRootPath": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|c:\\wgu\\software i\\windows-forms-inventory-system\\dade_staples_software_i_assessment\\dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|c:\\wgu\\software i\\windows-forms-inventory-system\\dade_staples_software_i_assessment\\dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifyproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\modifypart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|c:\\wgu\\software i\\windows-forms-inventory-system\\dade_staples_software_i_assessment\\dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|c:\\wgu\\software i\\windows-forms-inventory-system\\dade_staples_software_i_assessment\\dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\addpart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\outsourced.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -49,18 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\part.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{9388BC46-0FA4-4EE2-8350-34F9AD091D0A}|dade_staples_software_I_assessment\\dade_staples_software_I_assessment.csproj|solutionrelative:dade_staples_software_i_assessment\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -74,7 +74,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Form1.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Form1.cs",
@@ -82,26 +82,24 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T08:41:34.554Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 6,
               "Title": "Inventory.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Inventory.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Inventory.cs",
               "ToolTip": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Inventory.cs",
               "RelativeToolTip": "dade_staples_software_I_assessment\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAywC0AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T10:22:47.061Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Form1.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Form1.cs",
@@ -110,12 +108,11 @@
               "ViewState": "AgIAAA4AAAAAAAAAAIAwwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T10:55:35.052Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "ModifyPart.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyPart.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\ModifyPart.cs",
@@ -129,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "ModifyProduct.cs [Design]",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyProduct.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\ModifyProduct.cs",
@@ -137,12 +134,11 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\ModifyProduct.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-22T08:05:40.199Z",
-              "IsPinned": true,
-              "EditorCaption": " [Design]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AddProduct.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddProduct.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\AddProduct.cs",
@@ -156,7 +152,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "AddProduct.cs [Design]",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddProduct.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\AddProduct.cs",
@@ -170,19 +166,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ModifyProduct.cs",
-              "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyProduct.cs",
-              "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\ModifyProduct.cs",
-              "ToolTip": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyProduct.cs",
-              "RelativeToolTip": "dade_staples_software_I_assessment\\ModifyProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T08:07:23.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "ModifyPart.cs [Design]",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyPart.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\ModifyPart.cs",
@@ -194,7 +177,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 1,
+              "Title": "AddPart.cs [Design]",
+              "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddPart.cs",
+              "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\AddPart.cs",
+              "ToolTip": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddPart.cs [Design]",
+              "RelativeToolTip": "dade_staples_software_I_assessment\\AddPart.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T12:47:33.787Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ModifyProduct.cs",
+              "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyProduct.cs",
+              "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\ModifyProduct.cs",
+              "ToolTip": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\ModifyProduct.cs",
+              "RelativeToolTip": "dade_staples_software_I_assessment\\ModifyProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG0AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-22T08:07:23.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "AddPart.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddPart.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\AddPart.cs",
@@ -207,19 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AddPart.cs [Design]",
-              "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddPart.cs",
-              "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\AddPart.cs",
-              "ToolTip": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\AddPart.cs [Design]",
-              "RelativeToolTip": "dade_staples_software_I_assessment\\AddPart.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-22T12:47:33.787Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Outsourced.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Outsourced.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Outsourced.cs",
@@ -227,12 +222,11 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\Outsourced.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAApwBQAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:26:58.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T11:26:58.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 12,
               "Title": "InHouse.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\InHouse.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\InHouse.cs",
@@ -240,12 +234,11 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\InHouse.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAApwBAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-15T11:25:07.387Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-15T11:25:07.387Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 13,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Product.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Product.cs",
@@ -253,12 +246,11 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:20:32.559Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T10:20:32.559Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 14,
               "Title": "Part.cs",
               "DocumentMoniker": "C:\\WGU\\Software I\\windows-forms-inventory-system\\dade_staples_software_I_assessment\\dade_staples_software_I_assessment\\Part.cs",
               "RelativeDocumentMoniker": "dade_staples_software_I_assessment\\Part.cs",
@@ -266,8 +258,7 @@
               "RelativeToolTip": "dade_staples_software_I_assessment\\Part.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAlwAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T10:21:33.612Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-13T10:21:33.612Z"
             }
           ]
         }

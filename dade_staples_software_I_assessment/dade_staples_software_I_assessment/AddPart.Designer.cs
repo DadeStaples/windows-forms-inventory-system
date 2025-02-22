@@ -228,7 +228,7 @@
             this.Controls.Add(this.outsourcedButton);
             this.Controls.Add(this.inHouseButton);
             this.Name = "AddPart";
-            this.Text = "AddPart";
+            this.Text = "Add Part";
             this.ResumeLayout(false);
             this.PerformLayout();
 

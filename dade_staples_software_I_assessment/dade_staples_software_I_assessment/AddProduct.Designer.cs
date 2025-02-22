@@ -43,13 +43,6 @@
             this.partIDLabel = new System.Windows.Forms.Label();
             this.productIDBox = new System.Windows.Forms.TextBox();
             this.dgvAvailableParts = new System.Windows.Forms.DataGridView();
-            this.dgvAssociatedParts = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.addPartButton = new System.Windows.Forms.Button();
-            this.removePartButton = new System.Windows.Forms.Button();
-            this.searchBox = new System.Windows.Forms.TextBox();
-            this.searchButton = new System.Windows.Forms.Button();
             this.availPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -57,6 +50,7 @@
             this.availPartMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.availManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvAssociatedParts = new System.Windows.Forms.DataGridView();
             this.assocPartID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assocPartName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assocPartPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -64,6 +58,12 @@
             this.assocPriceMin = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assocPartMax = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.assocManufactureType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.addPartButton = new System.Windows.Forms.Button();
+            this.removePartButton = new System.Windows.Forms.Button();
+            this.searchBox = new System.Windows.Forms.TextBox();
+            this.searchButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).BeginInit();
             this.SuspendLayout();
@@ -202,79 +202,6 @@
             this.dgvAvailableParts.Size = new System.Drawing.Size(379, 150);
             this.dgvAvailableParts.TabIndex = 38;
             // 
-            // dgvAssociatedParts
-            // 
-            this.dgvAssociatedParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAssociatedParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.assocPartID,
-            this.assocPartName,
-            this.assocPartPrice,
-            this.assocPartStock,
-            this.assocPriceMin,
-            this.assocPartMax,
-            this.assocManufactureType});
-            this.dgvAssociatedParts.Location = new System.Drawing.Point(409, 250);
-            this.dgvAssociatedParts.Name = "dgvAssociatedParts";
-            this.dgvAssociatedParts.RowHeadersWidth = 51;
-            this.dgvAssociatedParts.RowTemplate.Height = 24;
-            this.dgvAssociatedParts.Size = new System.Drawing.Size(379, 150);
-            this.dgvAssociatedParts.TabIndex = 39;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(406, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
-            this.label1.TabIndex = 40;
-            this.label1.Text = "Available Parts";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(406, 231);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(109, 16);
-            this.label2.TabIndex = 41;
-            this.label2.Text = "Associated Parts";
-            // 
-            // addPartButton
-            // 
-            this.addPartButton.Location = new System.Drawing.Point(679, 202);
-            this.addPartButton.Name = "addPartButton";
-            this.addPartButton.Size = new System.Drawing.Size(108, 23);
-            this.addPartButton.TabIndex = 42;
-            this.addPartButton.Text = "Add Part";
-            this.addPartButton.UseVisualStyleBackColor = true;
-            this.addPartButton.Click += new System.EventHandler(this.addPartButton_Click);
-            // 
-            // removePartButton
-            // 
-            this.removePartButton.Location = new System.Drawing.Point(680, 406);
-            this.removePartButton.Name = "removePartButton";
-            this.removePartButton.Size = new System.Drawing.Size(108, 23);
-            this.removePartButton.TabIndex = 43;
-            this.removePartButton.Text = "Remove Part";
-            this.removePartButton.UseVisualStyleBackColor = true;
-            this.removePartButton.Click += new System.EventHandler(this.removePartButton_Click);
-            // 
-            // searchBox
-            // 
-            this.searchBox.Location = new System.Drawing.Point(686, 19);
-            this.searchBox.Name = "searchBox";
-            this.searchBox.Size = new System.Drawing.Size(100, 22);
-            this.searchBox.TabIndex = 44;
-            // 
-            // searchButton
-            // 
-            this.searchButton.Location = new System.Drawing.Point(605, 19);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(75, 23);
-            this.searchButton.TabIndex = 45;
-            this.searchButton.Text = "Search";
-            this.searchButton.UseVisualStyleBackColor = true;
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
-            // 
             // availPartID
             // 
             this.availPartID.DataPropertyName = "partID";
@@ -333,6 +260,24 @@
             this.availManufactureType.Name = "availManufactureType";
             this.availManufactureType.Visible = false;
             this.availManufactureType.Width = 125;
+            // 
+            // dgvAssociatedParts
+            // 
+            this.dgvAssociatedParts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvAssociatedParts.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.assocPartID,
+            this.assocPartName,
+            this.assocPartPrice,
+            this.assocPartStock,
+            this.assocPriceMin,
+            this.assocPartMax,
+            this.assocManufactureType});
+            this.dgvAssociatedParts.Location = new System.Drawing.Point(409, 250);
+            this.dgvAssociatedParts.Name = "dgvAssociatedParts";
+            this.dgvAssociatedParts.RowHeadersWidth = 51;
+            this.dgvAssociatedParts.RowTemplate.Height = 24;
+            this.dgvAssociatedParts.Size = new System.Drawing.Size(379, 150);
+            this.dgvAssociatedParts.TabIndex = 39;
             // 
             // assocPartID
             // 
@@ -393,6 +338,61 @@
             this.assocManufactureType.Visible = false;
             this.assocManufactureType.Width = 125;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(406, 26);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.TabIndex = 40;
+            this.label1.Text = "Available Parts";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(406, 231);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(109, 16);
+            this.label2.TabIndex = 41;
+            this.label2.Text = "Associated Parts";
+            // 
+            // addPartButton
+            // 
+            this.addPartButton.Location = new System.Drawing.Point(679, 202);
+            this.addPartButton.Name = "addPartButton";
+            this.addPartButton.Size = new System.Drawing.Size(108, 23);
+            this.addPartButton.TabIndex = 42;
+            this.addPartButton.Text = "Add Part";
+            this.addPartButton.UseVisualStyleBackColor = true;
+            this.addPartButton.Click += new System.EventHandler(this.addPartButton_Click);
+            // 
+            // removePartButton
+            // 
+            this.removePartButton.Location = new System.Drawing.Point(680, 406);
+            this.removePartButton.Name = "removePartButton";
+            this.removePartButton.Size = new System.Drawing.Size(108, 23);
+            this.removePartButton.TabIndex = 43;
+            this.removePartButton.Text = "Remove Part";
+            this.removePartButton.UseVisualStyleBackColor = true;
+            this.removePartButton.Click += new System.EventHandler(this.removePartButton_Click);
+            // 
+            // searchBox
+            // 
+            this.searchBox.Location = new System.Drawing.Point(686, 19);
+            this.searchBox.Name = "searchBox";
+            this.searchBox.Size = new System.Drawing.Size(100, 22);
+            this.searchBox.TabIndex = 44;
+            // 
+            // searchButton
+            // 
+            this.searchButton.Location = new System.Drawing.Point(605, 19);
+            this.searchButton.Name = "searchButton";
+            this.searchButton.Size = new System.Drawing.Size(75, 23);
+            this.searchButton.TabIndex = 45;
+            this.searchButton.Text = "Search";
+            this.searchButton.UseVisualStyleBackColor = true;
+            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            // 
             // AddProduct
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -421,7 +421,7 @@
             this.Controls.Add(this.partIDLabel);
             this.Controls.Add(this.productIDBox);
             this.Name = "AddProduct";
-            this.Text = "AddProduct";
+            this.Text = "Add Product";
             ((System.ComponentModel.ISupportInitialize)(this.dgvAvailableParts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAssociatedParts)).EndInit();
             this.ResumeLayout(false);
