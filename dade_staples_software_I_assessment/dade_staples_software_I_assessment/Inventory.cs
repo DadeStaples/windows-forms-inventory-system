@@ -43,7 +43,7 @@ namespace dade_staples_software_I_assessment
         }
 
 
-        // addProduct(Product) : void **TODO
+        // addProduct(Product) : void
 
         public static void addProduct(Product incomingProduct)
         {
@@ -83,7 +83,7 @@ namespace dade_staples_software_I_assessment
 
         }
 
-        //updateProduct(int, Product) : void **TODO
+        //updateProduct(int, Product) : void
         public static void updateProduct(int idToUpdate, Product incomingProduct)
         {
             Products[idToUpdate] = incomingProduct;
@@ -146,7 +146,6 @@ namespace dade_staples_software_I_assessment
             AllParts[idToUpdate] = incomingPart;          
         }
 
-        //use this to auto generate a new ID for parts being added to AllParts
         public static int newPartId()
         {
             if (AllParts.Count == 0)

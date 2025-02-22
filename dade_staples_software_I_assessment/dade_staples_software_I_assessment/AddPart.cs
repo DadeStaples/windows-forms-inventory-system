@@ -59,10 +59,8 @@ namespace dade_staples_software_I_assessment
                     incomingPart = new Outsourced(partID, name, price, inStock, min, max, companyName);
                 }
 
-                // Add the new part to inventory
                 Inventory.AllParts.Add(incomingPart);
 
-                // Close the form
                 this.Close();
             }
             catch (Exception ex)
