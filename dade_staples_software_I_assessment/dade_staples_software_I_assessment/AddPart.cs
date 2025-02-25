@@ -47,6 +47,15 @@ namespace dade_staples_software_I_assessment
                     return;
                 }
 
+                if(inStock > max ||  inStock < min)
+                {
+                    MessageBox.Show("Stock value must be within the min and max values.",
+                "Input Error",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+                    return;
+                }
+
                 Part incomingPart;
                 if (inHouseButton.Checked)
                 {

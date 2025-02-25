@@ -142,6 +142,15 @@ namespace dade_staples_software_I_assessment
                     return;
                 }
 
+                if (inStock > max || inStock < min)
+                {
+                    MessageBox.Show("Stock value must be within the min and max values.",
+                   "Error",
+                   MessageBoxButtons.OK,
+                   MessageBoxIcon.Error);
+                    return;
+                }
+
                 Product productToAdd = new Product(selectedProduct.associatedParts, productID, name, price, inStock, min, max);
                 Inventory.updateProduct(selectedProduct.productID, productToAdd);
                 this.Close();

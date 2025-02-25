@@ -52,18 +52,59 @@ namespace dade_staples_software_I_assessment
 
         private void savePartButton_Click(object sender, EventArgs e)
         {
-            if(inHouseButton.Checked)
+            try
             {
-                InHouse modifiedPart = new InHouse(int.Parse(partIDBox.Text), nameBox.Text, decimal.Parse(priceBox.Text), int.Parse(stockBox.Text), int.Parse(minBox.Text), int.Parse(maxBox.Text), int.Parse(manufactureBox.Text));
-                Inventory.updatePart(selectedPart.partID, modifiedPart);
+                if (inHouseButton.Checked)
+                {
+                    if (int.Parse(minBox.Text) > int.Parse(maxBox.Text))
+                    {
+                        MessageBox.Show("Min cannot be greater than Max.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (int.Parse(stockBox.Text) > int.Parse(maxBox.Text) || int.Parse(stockBox.Text) < int.Parse(minBox.Text))
+                    {
+                        MessageBox.Show("Stock value must be within the min and max values.", 
+                                        "Error", 
+                                        MessageBoxButtons.OK, 
+                                        MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    InHouse modifiedPart = new InHouse(int.Parse(partIDBox.Text), nameBox.Text, decimal.Parse(priceBox.Text), int.Parse(stockBox.Text), int.Parse(minBox.Text), int.Parse(maxBox.Text), int.Parse(manufactureBox.Text));
+                    Inventory.updatePart(selectedPart.partID, modifiedPart);
+                }
+                else
+                {
+                    if (int.Parse(minBox.Text) > int.Parse(maxBox.Text))
+                    {
+                        MessageBox.Show("Min cannot be greater than Max.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                        return;
+                    }
+                    if (int.Parse(stockBox.Text) > int.Parse(maxBox.Text) || int.Parse(stockBox.Text) < int.Parse(minBox.Text))
+                    {
+                        MessageBox.Show("Stock value must be within the min and max values.",
+                                        "Error",
+                                        MessageBoxButtons.OK,
+                                        MessageBoxIcon.Error);
+                        return;
+                    }
+
+                    Outsourced modifiedPart = new Outsourced(int.Parse(partIDBox.Text), nameBox.Text, decimal.Parse(priceBox.Text), int.Parse(stockBox.Text), int.Parse(minBox.Text), int.Parse(maxBox.Text), manufactureBox.Text);
+                    Inventory.updatePart(selectedPart.partID, modifiedPart);
+                }
+                this.Close();
             }
-            else
+            catch (Exception ex)
             {
-                Outsourced modifiedPart = new Outsourced(int.Parse(partIDBox.Text), nameBox.Text, decimal.Parse(priceBox.Text), int.Parse(stockBox.Text), int.Parse(minBox.Text), int.Parse(maxBox.Text), manufactureBox.Text);
-                Inventory.updatePart(selectedPart.partID, modifiedPart);
+                MessageBox.Show("Invalid input. Please check all fields.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            this.Close();
-            
+
         }
     }
 }
